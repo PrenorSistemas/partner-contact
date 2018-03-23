@@ -12,6 +12,7 @@
                 <field name="city"/>
                 <field name="state_id"/>
                 <field name="country_id"/>
+                    <field name="row_8"/>
                 </group>
             </form>
         </field>
@@ -27,6 +28,7 @@
                 <field name="city"/>
                 <field name="state_id"/>
                 <field name="country_id"/>
+                <field name="row_8"/>
             </tree>
         </field>
     </record>
@@ -41,6 +43,7 @@
                 <field name="city"/>
                 <field name="state_id"/>
                 <field name="country_id"/>
+                <field name="row_8"/>
                     <group expand="0" string="Group By">
                         <filter string="State" domain="[]" context="{'group_by':'state_id'}"/>
                         <filter string="Country" domain="[]" context="{'group_by':'country_id'}"/>

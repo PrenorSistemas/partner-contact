@@ -22,7 +22,7 @@ class BetterZip(models.Model):
     country_id = fields.Many2one('res.country', 'Country')
     latitude = fields.Float()
     longitude = fields.Float()
-    row_8 = fields.Integer()
+    row_8 = fields.Char()
 
 
     @api.one
