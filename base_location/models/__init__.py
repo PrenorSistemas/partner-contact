@@ -6,3 +6,5 @@ from . import better_zip
 from . import partner
 from . import state
 from . import company
+from . import res_country_region
+from . import res_country_state

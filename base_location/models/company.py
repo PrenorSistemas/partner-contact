@@ -9,6 +9,8 @@ class ResCompany(models.Model):
 
     _inherit = 'res.company'
 
+    region_id = fields.Many2one('res.country.region', 'Region')
+
     @api.onchange('better_zip_id')
     def on_change_city(self):
         if self.better_zip_id:
@@ -16,6 +18,7 @@ class ResCompany(models.Model):
             self.city = self.better_zip_id.city
             self.state_id = self.better_zip_id.state_id
             self.country_id = self.better_zip_id.country_id
+            self.region_id = self.region_id.id
 
     better_zip_id = fields.Many2one(
         'res.better.zip',

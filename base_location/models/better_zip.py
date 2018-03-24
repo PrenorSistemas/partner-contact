@@ -20,9 +20,14 @@ class BetterZip(models.Model):
     city = fields.Char('City', required=True)
     state_id = fields.Many2one('res.country.state', 'State')
     country_id = fields.Many2one('res.country', 'Country')
+    region_id = fields.Many2one('res.country.region', 'Region')
     latitude = fields.Float()
     longitude = fields.Float()
     row_8 = fields.Char()
+    row_4 = fields.Char()
+    row_5 = fields.Char()
+    row_6 = fields.Char()
+    row_7 = fields.Char()
 
 
     @api.one
