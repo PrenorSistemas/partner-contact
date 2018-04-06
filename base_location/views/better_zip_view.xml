@@ -8,12 +8,17 @@
             <form string="City">
                 <group col="4">
                     <field name="name"/>
-                    <field name="code"/>
-                    <field name="city"/>
-                    <field name="state_id"/>
-                    <field name="region_id"/>
-                    <field name="country_id"/>
-                    <field name="row_8"/>
+                <field name="code"/>
+                <field name="city"/>
+                <field name="state_id"/>
+                <field name="region_id"/>
+                <field name="country_id"/>
+                <field name="latitude" />
+                <field name="longitude" />
+                <field name="row_5"/>
+                <field name="row_6"/>
+                <field name="row_7"/>
+                <field name="row_8"/>
                 </group>
             </form>
         </field>
@@ -30,6 +35,11 @@
                 <field name="state_id"/>
                 <field name="region_id"/>
                 <field name="country_id"/>
+                <field name="latitude" />
+                <field name="longitude" />
+                <field name="row_5"/>
+                <field name="row_6"/>
+                <field name="row_7"/>
                 <field name="row_8"/>
             </tree>
         </field>
