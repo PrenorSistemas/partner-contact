@@ -11,7 +11,7 @@
 
 
 from odoo import api, models, fields, _
-from odoo.exceptions import ValidationError, UserError
+from odoo.exceptions import ValidationError
 from odoo.tools.safe_eval import safe_eval
 
 
@@ -39,6 +39,16 @@ class ResPartnerIdCategory(models.Model):
         'Python validation code',
         help="Python code called to validate an id number.",
         default=_default_validation_code)
+    company_type = fields.Selection(
+        selection=lambda self: self._get_company_type_selection(),
+    )
+
+    @api.model
+    def _get_company_type_selection(self):
+        return [
+            ('person', 'Individual'),
+            ('company', 'Company'),
+        ]
 
     @api.multi
     def _validation_eval_context(self, id_number):
@@ -63,7 +73,7 @@ class ResPartnerIdCategory(models.Model):
                       mode='exec',
                       nocopy=True)
         except Exception as e:
-            raise UserError(
+            raise ValidationError(
                 _('Error when evaluating the id_category validation code:'
                   ':\n %s \n(%s)') % (self.name, e))
         if eval_context.get('failed', False):

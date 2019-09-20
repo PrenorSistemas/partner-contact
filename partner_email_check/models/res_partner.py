@@ -4,14 +4,14 @@
 
 import logging
 from odoo import api, models, _
-from odoo.exceptions import UserError
+from odoo.exceptions import ValidationError
 
 _logger = logging.getLogger(__name__)
 
 try:
     from validate_email import validate_email
 except ImportError:
-    _logger.error('Cannot import "validate_email".')
+    _logger.debug('Cannot import "validate_email".')
 
     def validate_email(email):
         _logger.warning(
@@ -32,7 +32,7 @@ class ResPartner(models.Model):
     def email_check(self, emails):
         for email in emails.split(','):
             if not validate_email(email):
-                raise UserError(
+                raise ValidationError(
                     _("%s is an invalid email") % email.strip()
                 )
         return True

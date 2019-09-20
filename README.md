@@ -21,17 +21,19 @@ Available addons
 addon | version | summary
 --- | --- | ---
 [base_country_state_translatable](base_country_state_translatable/) | 10.0.1.0.0 | Translate Country States
-[base_location](base_location/) | 10.0.1.0.2 | Enhanced zip/npa management system
+[base_location](base_location/) | 10.0.1.0.4 | Enhanced zip/npa management system
 [base_location_geonames_import](base_location_geonames_import/) | 10.0.1.1.1 | Import better zip entries from Geonames
-[base_location_nuts](base_location_nuts/) | 10.0.1.0.0 | NUTS Regions
+[base_location_nuts](base_location_nuts/) | 10.0.1.1.0 | NUTS Regions
 [base_partner_merge](base_partner_merge/) | 10.0.1.0.0 | Partner merge wizard without dependency on CRM
 [base_partner_sequence](base_partner_sequence/) | 10.0.1.0.0 | Sets customer's code from a sequence
 [base_vat_sanitized](base_vat_sanitized/) | 10.0.1.0.0 | Adds field sanitized_vat on partners
 [partner_academic_title](partner_academic_title/) | 10.0.1.0.0 | Add possibility to define some academic title
 [partner_address_street3](partner_address_street3/) | 10.0.1.0.0 | Add a third address line on partners
+[partner_address_version](partner_address_version/) | 10.0.1.0.0 | Partner Address Version
 [partner_affiliate](partner_affiliate/) | 10.0.1.0.0 | Partner Affiliates
 [partner_alias](partner_alias/) | 10.0.1.0.0 | Adds aliases to partner names.
 [partner_bank_active](partner_bank_active/) | 10.0.1.0.0 | Allow to deactivate a partner bank account
+[partner_bank_sort_code](partner_bank_sort_code/) | 10.0.1.0.0 | Adds a field in banks to manage Sort Codes
 [partner_capital](partner_capital/) | 10.0.1.0.0 | Partners Capital
 [partner_changeset](partner_changeset/) | 10.0.1.0.1 | Partner Changesets
 [partner_coc](partner_coc/) | 10.0.1.0.0 | Adds a field 'Chamber Of Commerce Registration Number' to partner
@@ -53,25 +55,29 @@ addon | version | summary
 [partner_contact_weight](partner_contact_weight/) | 10.0.1.0.1 | Provide contact weight
 [partner_create_by_vat](partner_create_by_vat/) | 10.0.1.0.1 | Using VIES webservice, name and address information will be fetched and added to the partner.
 [partner_disable_gravatar](partner_disable_gravatar/) | 10.0.1.0.0 | Disable automatic connection to gravatar.com
-[partner_email_check](partner_email_check/) | 10.0.1.0.0 | Validate email address field
+[partner_email_check](partner_email_check/) | 10.0.1.0.2 | Validate email address field
 [partner_employee_quantity](partner_employee_quantity/) | 10.0.1.0.0 | Know how many employees a partner has
 [partner_external_map](partner_external_map/) | 10.0.1.0.0 | Add Map and Map Routing buttons on partner form to open GMaps, OSM, Bing and others
 [partner_financial_risk](partner_financial_risk/) | 10.0.1.0.0 | Manage partner risk
 [partner_firstname](partner_firstname/) | 10.0.2.1.1 | Split first name and last name for non company partners
 [partner_helper](partner_helper/) | 10.0.0.1.0 | Add specific helper methods
-[partner_identification](partner_identification/) | 10.0.1.1.1 | Partner Identification Numbers
+[partner_identification](partner_identification/) | 10.0.1.2.0 | Partner Identification Numbers
 [partner_label](partner_label/) | 10.0.1.0.0 | Print partner labels
-[partner_multi_relation](partner_multi_relation/) | 10.0.1.0.1 | Partner relations
+[partner_multi_relation](partner_multi_relation/) | 10.0.1.0.2 | Partner relations
+[partner_noncommercial](partner_noncommercial/) | 10.0.1.0.0 | Partner Non Commercial
+[partner_noncommercial_multi_relation](partner_noncommercial_multi_relation/) | 10.0.1.0.0 | Partner Non Commercial Multi Relation
 [partner_password_reset](partner_password_reset/) | 10.0.1.0.0 | Add Wizard to allow resetting of a Partner's associated user password from within the partner view.
 [partner_phone_extension](partner_phone_extension/) | 10.0.1.0.0 | Partner Phone Number Extension
 [partner_phonecall_schedule](partner_phonecall_schedule/) | 10.0.1.0.0 | Track the time and days your partners expect phone calls
 [partner_risk_insurance](partner_risk_insurance/) | 10.0.1.0.0 | Lets set risk insurance info in the partners
 [partner_sale_risk](partner_sale_risk/) | 10.0.1.0.0 | Manage partner risk in sales orders
 [partner_second_lastname](partner_second_lastname/) | 10.0.1.0.0 | Have split first and second lastnames
-[partner_sector](partner_sector/) | 10.0.1.1.0 | Add partner sectors
+[partner_sector](partner_sector/) | 10.0.1.2.1 | Add partner sectors
+[partner_socialmedia](partner_socialmedia/) | 10.0.1.0.0 | Add social media fields to contacts
 [partner_stock_risk](partner_stock_risk/) | 10.0.1.0.0 | Manage partner risk in stock moves
 [partner_street_number](partner_street_number/) | 10.0.1.0.0 | Introduces separate fields for street name and street number.
 [partner_vat_unique](partner_vat_unique/) | 10.0.1.0.0 | Partner VAT Unique
+[portal_partner_select_all](portal_partner_select_all/) | 10.0.1.0.1 | Portal Partner Select All
 
 
 Unported addons
